@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 14%, 8%); /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background: hsl(0, 10%, 75%); /* Slightly lighter dark background for app container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #131313; /* Green color for header */
+  text-decoration: solid;
+}
+
+/* Todo Input */
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #dfd4d4; /* Dark border */
+  border-radius: 5px;
+  background-color: #f5e9e9aa; /* Dark background for input */
+  color: #211111; /* Light text for input */
+}
+
+button {
+  margin-left: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #ac7d31; /* Blue background for Add button */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b37a00c4; /* Darker blue on hover */
+}
+
+button:disabled {
+  background-color: #666; /* Disabled state */
+  cursor: not-allowed;
+}
+
+/* Todo List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #444; /* Dark border for todo items */
+  background-color: #edeaea; /* Darker background for todo items */
+  border-radius: 5px;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+li:hover {
+  transform: translateX(5px); /* Hover effect */
+  background-color: #897c7c; /* Slight hover effect for todo items */
+}
+
+li span {
+  cursor: pointer;
+  color: #121111; /* Light text color for todo item text */
+}
+
+li button {
+  background-color: hsla(354, 83%, 34%, 0.71); /* Red color for delete button */
+  padding: 6px 12px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+li button:hover {
+  background-color: #a71d2a; /* Darker red on hover */
+}
+
+li button:disabled {
+  background-color: #666; /* Disabled state for delete button */
+  cursor: not-allowed;
+}
+
